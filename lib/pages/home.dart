@@ -2,9 +2,14 @@ import 'package:basic_app/models/category_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
   HomePage({super.key});
 
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
   List<CategoryModel> categories = [];
 
   void _getCategories() {
@@ -13,6 +18,7 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    _getCategories();
     return Scaffold(
       appBar: appBar(),
       backgroundColor: Colors.white,
