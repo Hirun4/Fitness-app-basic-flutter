@@ -1,8 +1,9 @@
-import 'package:fitness/models/category_model.dart';
-import 'package:fitness/models/diet_model.dart';
-import 'package:fitness/models/popular_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+
+import '../models/category_model.dart';
+import '../models/diet_model.dart';
+import '../models/popular_model.dart';
 
 class HomePage extends StatelessWidget {
   HomePage({super.key});
