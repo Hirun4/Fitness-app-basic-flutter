@@ -12,6 +12,21 @@ class HomePage extends StatelessWidget {
       body: Column(
         children: [
           _searchField(),
+          SizedBox(
+            height: 40,
+          ),
+          Column(
+            children: [
+              Text(
+                'Category',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 18,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+            ],
+          )
         ],
       ),
     );
