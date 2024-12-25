@@ -7,6 +7,10 @@ class HomePage extends StatelessWidget {
 
   List<CategoryModel> categories = [];
 
+  void _getCategories() {
+    categories = CategoryModel.getCategories();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
