@@ -348,7 +348,7 @@ class HomePage extends StatelessWidget {
           margin: const EdgeInsets.all(10),
           alignment: Alignment.center,
           child: SvgPicture.asset(
-            'assets/icons/Arrow - Left 2.svg',
+            'assets/icons/arrowleft.svg',
             height: 20,
             width: 20,
           ),
