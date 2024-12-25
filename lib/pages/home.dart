@@ -47,16 +47,22 @@ class _HomePageState extends State<HomePage> {
                 height: 15,
               ),
               Container(
-                height: 150,
+                height: 120,
                 child: ListView.separated(
                     itemCount: categories.length,
                     scrollDirection: Axis.horizontal,
-                    separatorBuilder: (context, index) => SizedBox(),
+                    padding: EdgeInsets.only(
+                      left: 20,
+                      right: 20,
+                    ),
+                    separatorBuilder: (context, index) => SizedBox(
+                          width: 25,
+                        ),
                     itemBuilder: (context, index) {
                       return Container(
                         width: 100,
-                        decoration:
-                            BoxDecoration(color: categories[index].boxColor),
+                        decoration: BoxDecoration(
+                            color: categories[index].boxColor.withOpacity(0.2)),
                       );
                     }),
               )
